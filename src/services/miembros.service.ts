@@ -177,7 +177,7 @@ export class MiembrosService {
   obtenerMiembros(): Miembro[] {
     return this.Miembros;
   }
-  obtenerMiembroEspecifico(id: number): Miembro {
-    return this.Miembros[id];
+  obtenerMiembroEspecifico(ida: number): object {
+    return this.Miembros.filter(({id}) =>  id === ida);
   }
 }

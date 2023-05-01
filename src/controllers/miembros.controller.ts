@@ -11,6 +11,6 @@ export class MiembrosController {
   }
   @Get(':id')
   obtenerMiembroEspecifico(@Param('id') id: number): object {
-    return this.miembrosService.obtenerMiembroEspecifico(id);
+    return this.miembrosService.obtenerMiembroEspecifico(+id);
   }
 }
